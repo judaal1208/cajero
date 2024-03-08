@@ -1,6 +1,11 @@
-# main.py
-from tk import ventana
+import tkinter as tk
+from tk import CajeroInterfaz
 
-# Ejecutar el bucle principal de la aplicación
-if __name__ == "__main__":
-    ventana.mainloop()
+# Interfaz gráfica
+ventana = tk.Tk()
+ventana.title("Cajero Automático")
+ventana.configure(bg="#E0E0E0")
+
+cajero_interfaz = CajeroInterfaz(ventana)
+
+ventana.mainloop()
